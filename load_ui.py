@@ -1,3 +1,4 @@
+import os
 import sys
  
 from PySide2.QtUiTools import QUiLoader
@@ -5,13 +6,14 @@ from PySide2.QtWidgets import QApplication
 from PySide2.QtCore import QFile
 
 import site
-site.addsitedir("E:\\")
-import qtExamples
-from qtExamples.exporter_window import ExporterWindow
+site.addsitedir("E:\\GitHub\\BabylonJSExporterUXPrototype")
+import exporter_window
+from exporter_window.exporter_window import ExporterWindow
  
  
 if __name__ == "__main__":
-    ui_file="E:\\qtDesignerProjects\\test\\untitled\\babylonjsExporter.ui"
+    ui_file=os.path.join("E:\\GitHub\\BabylonJSExporterUXPrototype","ui", "babylonjsExporter.ui")
+    print(ui_file)
     w = ExporterWindow(ui_file)
     geometry_properties = w.get_geometry_properties()
     print(geometry_properties)
