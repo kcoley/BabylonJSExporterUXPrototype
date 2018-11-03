@@ -4,6 +4,7 @@ import sys
 from PySide2.QtUiTools import QUiLoader
 from PySide2.QtWidgets import QApplication
 from PySide2.QtCore import QFile
+from PySide2.QtWidgets import QCheckBox
 
 import site
 site.addsitedir("E:\\GitHub\\BabylonJSExporterUXPrototype")
@@ -18,6 +19,8 @@ if __name__ == "__main__":
     geometry_properties = w.get_geometry_properties()
     print(geometry_properties)
     settings_properties = w.get_settings_properties()
+
+    
     print(settings_properties)
 
     w.show()

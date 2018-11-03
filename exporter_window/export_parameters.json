@@ -1,0 +1,20 @@
+{
+    "geometry": {
+        "optimize_vertices": {
+            "display_name": "Optimize Vertices",
+            "default_value": false
+        },
+        "export_hidden_objects": {
+            "display_name": "Export Hidden Objects",
+            "default_value": false
+        },
+        "skinning": {
+            "display_name": "Skinning",
+            "default_value": false
+        },
+        "blendShapes": {
+            "display_name": "Blendshapes",
+            "default_value": false
+        },
+    }
+}
